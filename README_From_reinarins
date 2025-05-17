@@ -1,0 +1,16 @@
+# UiPath_KasperskyPassCheckerREF 
+<b>::: IMPORTANTE :::</b> 
+<br><br> 
+Este es un proyecto creado con el <b>único fin</b> de explorar el <b>Robotic Enterprise Framework</b> de UiPath y de crear un bot siguiendo este marco. Para ello, se han almacenado IDs, datos y correos de empleados FICTICIOS junto a una serie de contraseñas en un archivo Excel, <b>PRÁCTICA NO RECOMENDADA</b> a la hora de cumplir con las directrices en materia de ciberseguridad.
+<br><hr> 
+:robot: El <b>objetivo</b> de este bot es comprobar la seguridad de diferentes contraseñas almacenadas en un archivo Excel. Para ello, accede a la web 'Kaspersky Password Checker', introduce una contraseña y solicita nuevas para aquellas contraseñas marcadas como inseguras (icono amarillo) o muy inseguras (icono rojo). Una vez obtenidas estas nuevas contraseñas, las almacena en un Excel nuevo. Después, accede al artículo 'La calidad de tus contraseñas' de la web 'Seguridad en Internet', y recoge la información de la sección 'Características de una contraseña segura' para guardarla en un archivo de texto.
+<br>
+Por último, adjunta ambos archivos en un correo electrónico y los envía a la persona de interés.
+<br>
+Este bot contempla también dos posibles excepciones de negocio:
+1. Archivo Excel no encontrado: si el archivo Excel que guarda todos los datos necesarios para el inicio del proceso (donde se almacenan los IDs, los datos y las contraseñas) ha sido cambiado de ubicación o se ha visto modificado su nombre, el bot envía un correo electrónico para notificar del error. 
+2. Datos incorrectos en el archivo Excel: si en la columna 'IDs' del archivo hay algún caracter no numérico, el bot identifica que no se han guardado los datos correctamente y envía un correo electrónico para notificar del error. 
+<br><br>
+Especial hincapié en que este es un bot creado como proyecto final para mi primer curso de RPA en Generation Spain, por lo que insisto en que <b>almacenar datos sensibles en archivos Excel es una práctica que NO DEBE SEGUIRSE</b>.  
+<br><br>
+¡Gracias! :blush:
